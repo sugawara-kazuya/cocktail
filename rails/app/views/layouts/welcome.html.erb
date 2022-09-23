@@ -1,15 +1,15 @@
 <div class="jumbotron">
   <div align="center">
-    <h5 class="display-6">まあまあ適当なカクテルバー</h5>
+    <h5 class="display-6">スタバSTクラブ</h5>
     <% if @current_user.nil? %>
-      <p class="lead">Welcome to Cocktail BAR.</p>
+      <p class="lead">Welcome to starbucks.</p>
     <% else %>
       <p class="lead">Welcome <%= @current_user.name %></p>
     <% end %>
     <hr class="my-4">
-    <%= image_tag 'bar_image.jpeg', width: '70%', height: '70%' %>
+    <%= image_tag 'brureflape.jpeg', width: '70%', height: '70%' %>
     <a class="btn btn-secondary btn-lg mx-3 mt-4" href="/recipes/menu?style=0&tech=0&alcohol=0" role="button"><i class="fas fa-glass-cheers"></i>　Go to Recipies</a>
-    <a class="btn btn-secondary ml-3 mt-4" href="/do_not_come_to_shigehisa" role="button">しげひさを呼ぶ</a>
+    <a class="btn btn-secondary ml-3 mt-4" href="/do_not_come_to_shigehisa" role="button">須田さんを呼ぶ</a>
 
     <% if @current_user.nil? %>
       <a class="btn btn-secondary mr-3 mt-4" href="/users/login_page" role="button">ログイン</a>

@@ -84,8 +84,6 @@ ActiveRecord::Schema.define(version: 2021_09_11_135751) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "recipe_id", null: false
-    t.bigint "assessment_id", null: false
-    t.index ["assessment_id"], name: "index_reviews_on_assessment_id"
     t.index ["recipe_id"], name: "index_reviews_on_recipe_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end

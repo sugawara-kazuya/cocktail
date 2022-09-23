@@ -43,7 +43,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/orders/myorder"><i class="fas fa-cocktail"></i> 注文中のレシピ</a>
           </li>
-          <% if [1, 3].include?(@current_user_id) %>
+          <% if [1, 3, 5].include?(@current_user_id) %>
             <li class="nav-item">
               <a class="nav-link" href="/orders">注文一覧</a>
             </li>

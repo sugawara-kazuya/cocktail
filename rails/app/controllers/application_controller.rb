@@ -13,15 +13,17 @@ class ApplicationController < ActionController::Base
   end
 
   def do_not_come_to_shigehisa
+    name = User.current_user(cookies)&.name || 'かずぅ'
     word_list = [
-      "むり",
-      "やだ",
-      "二度と呼ぶな",
-      "自分でやれよ"
+      name + "はDTORで",
+      "アップルパイは私がやります",
+      name + "はバーで",
+      name + "はCS",
+      name + "はDTO"
     ]
     apologize_list = [
-      "ごめんて...",
-      "そんな...",
+      "了解です",
+      "何回やらせるんですか",
       "うそでしょ...",
       "すいません"
     ]
